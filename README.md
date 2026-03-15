@@ -77,6 +77,11 @@ python py_paramsearch.py
 ```
 Runs all 2,200 trials on one machine. Saves checkpoint to `search_checkpoint_shard_0.csv` and best params to `best_praat_params_shard_0.json`.
 
+Or if it doesnt work, find the pathfile of your python.exe file and copy it, here is an example on what you should enter in your CLI:
+
+```bash
+C:\Users\YourProfileName\AppData\Local\Programs\Python\Python313\python.exe J:\thesis\py_paramsearch.py --shard 0 --num-shard 4
+```
 ---
 
 ### Multiple devices (sharding)
